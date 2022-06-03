@@ -1,13 +1,13 @@
-let userName = '';
+let userName = 'Eduardo';
 userName ? console.log (`Hello ${userName}` ) : console.log('Hello!');
-
-const userQuestion = '¿Cual es mi frase de la semana'
+ 
+const userQuestion = '¿Cual es mi frase de la semana?'
+ 
 console.log(`${userName} has asked ${userQuestion}`);
+ 
 let randomNumber =Math.floor(Math.random() * 8);
-
-
-let button ='';
-switch(randomNumber){
+const mostrarMensaje = () => {
+  switch(randomNumber){
   case 0:
   console.log('El miedo a perder la identidad es un freno para la evolución del talento');
   break;
@@ -24,14 +24,13 @@ case 4:
 console.log('Lo que decidas hacer asegpurate de que te haga feliz');
 break;
 case 5:
-console.log('Se como una piñña, parate en alto, usa una corona y se muy dulce');
+console.log('Se como una piña, parate en alto, usa una corona y se muy dulce');
 break;
 case 6:
 console.log('Fallaras el 100% de todo lo que no itentes hacer');
 break;
 case 7:
-console.log('No se trata de si te deriiban, se trata de si te levantas');
+console.log('No se trata de si te derriban, se trata de si te levantas');
 break;
 }
-
-console.log(`Tu frase es ${button}`);
+}
